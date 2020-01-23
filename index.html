@@ -12,17 +12,17 @@
         <nav class="z-depth-0 red darken-4">
             <div class="nav-wrapper container">
                 <a href="#" class="brand-logo">
-                    🇯🇵 Japan Travel Guide
+                    🇯🇵 Japan Travel Guides
                 </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="admin" style="display: none">
+                        <a href="#" class="white-text modal-trigger" data-target="modal-create">Create Guide</a>
+                    </li>
                     <li class="logged-in" style="display: none">
                         <a href="#" class="white-text modal-trigger" data-target="modal-account">Account</a>
                     </li>
                     <li class="logged-in" style="display: none">
                         <a href="#" class="white-text" id="logout">Logout</a>
-                    </li>
-                    <li class="admin" style="display: none">
-                        <a href="#" class="white-text modal-trigger" data-target="modal-create">Create Guide</a>
                     </li>
                     <li class="logged-out" style="display: none">
                         <a href="#" class="white-text modal-trigger" data-target="modal-login">Login</a>
@@ -118,11 +118,13 @@
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-            apiKey: "AIzaSyBImer0odVRCYH1GDPSC90tlOH7-eUGGBk",
-            authDomain: "nn-game-guidez-a189c.firebaseapp.com",
-            databaseURL: "https://nn-game-guidez-a189c.firebaseio.com",
-            projectId: "nn-game-guidez-a189c",
+            apiKey: "AIzaSyBNh1DuWw6sMASG3i371GN-J3mSFeeeHiA",
+            authDomain: "japan-travel-guides.firebaseapp.com",
+            databaseURL: "https://japan-travel-guides.firebaseio.com",
+            projectId: "japan-travel-guides",
         };
+        // nn-game-guidez-a189c
+
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         
